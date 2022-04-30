@@ -44,7 +44,7 @@ args = vars(ap.parse_args())
 # Declare a constant which will work as the threshold for EAR value, below which it will be regared as a blink 
 EAR_THRESHOLD = 0.3
 # Declare another costant to hold the consecutive number of frames to consider for a blink 
-CONSECUTIVE_FRAMES = 15 
+CONSECUTIVE_FRAMES = 60
 # Another constant which will work as a threshold for MAR value
 MAR_THRESHOLD = 14
 
@@ -178,10 +178,10 @@ df=pd.read_csv("op_phonecam.csv")
 df.plot(x='TIME',y=['EAR','MAR'])
 #plt.xticks(rotation=45, ha='right')
 
-plt.subplots_adjust(bottom=0.30)
-plt.title('EAR & MAR calculation over time of phone cam')
-plt.ylabel('EAR & MAR')
-plt.gca().axes.get_xaxis().set_visible(False)
-plt.show()
+# plt.subplots_adjust(bottom=0.30)
+# plt.title('EAR & MAR calculation over time of phone cam')
+# plt.ylabel('EAR & MAR')
+# plt.gca().axes.get_xaxis().set_visible(False)
+# plt.show()
 
 cv2.destroyAllWindows()

@@ -45,7 +45,7 @@ args = vars(ap.parse_args())
 # Declare a constant which will work as the threshold for EAR value, below which it will be regared as a blink 
 EAR_THRESHOLD = 0.3
 # Declare another costant to hold the consecutive number of frames to consider for a blink 
-CONSECUTIVE_FRAMES = 20 
+CONSECUTIVE_FRAMES = 60 
 # Another constant which will work as a threshold for MAR value
 MAR_THRESHOLD = 14
 
